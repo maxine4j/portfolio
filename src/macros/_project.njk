@@ -1,0 +1,19 @@
+{% macro card(title, description, links) %}
+<div class="project" id="proj-dominion">
+    <img class="project-bg" draggable="false" src="https://tim-ings.com/img/headers/Dominion.png">
+    <div class="project-info">
+        <div class="project-title">
+            <h2>{{ title }}</h2>
+        </div>
+        <div class="project-desc">
+            <div class="project-links">
+                <a class="button" target="_blank" rel="noopener rereferrer" href="https://github.com/tim-ings/dominion">
+                    <img src="https://tim-ings.com/img/logos/github_light.png">
+                    <span>GitHub</span>
+                </a>
+            </div>
+            <p>{{ description }}</p>
+        </div>
+    </div>
+</div>
+{% endmacro %}
