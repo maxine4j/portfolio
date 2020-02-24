@@ -6,8 +6,17 @@ const autoprefixer = require('gulp-autoprefixer');
 const cleanCSS = require('gulp-clean-css');
 const imagemin = require('gulp-imagemin');
 const nunjucksRender = require('gulp-nunjucks-render');
-const concat = require('gulp-concat');
 const htmlmin = require('gulp-htmlmin');
+const data = require('gulp-data');
+const fs = require('fs');
+
+const getJsonData = () => {
+    return {
+        data: {
+            projects: JSON.parse(fs.readFileSync('./src/data/projects.json', 'utf8')) // require caches so use fs
+        }
+    }
+}
 
 gulp.task('sass', 
     () => gulp.src('./src/styles/**/*.scss')
@@ -16,20 +25,21 @@ gulp.task('sass',
             cascade: false
         }))
         .pipe(cleanCSS())
-        .pipe(gulp.dest('./build/css'))
+        .pipe(gulp.dest('./build/'))
         .pipe(browserSync.stream())
 );
 
 gulp.task('nunjucks', 
     () => gulp.src('./src/**/*.njk')
+        .pipe(data(file => getJsonData()))
         .pipe(nunjucksRender({
-            path: './src'
+            path: './src/',
         }))
         .pipe(htmlmin({
             collapseWhitespace: true,
             removeComments: true
         }))
-        .pipe(gulp.dest('./build'))
+        .pipe(gulp.dest('./build/'))
 );
 
 // ensure we run nunjucks before reloading
@@ -50,11 +60,12 @@ gulp.task('serve',
         'nunjucks-html-watch', 
         () => {
             browserSync.init({
-                server: './build'
+                server: './build/',
             });
 
             gulp.watch('./src/styles/**/*.scss', gulp.task('sass'));
-            gulp.watch('./src/**/*.njk', gulp.task('nunjucks-html-watch'))
+            gulp.watch('./src/**/*.njk', gulp.task('nunjucks-html-watch'));
+            gulp.watch('./src/data/*.json', gulp.task('nunjucks-html-watch'))
         }
     )
 );
@@ -62,7 +73,7 @@ gulp.task('serve',
 gulp.task('compressJs', 
     () => gulp.src('./src/js/**/*.js')
         .pipe(uglify())
-        .pipe(gulp.dest('./build/js'))
+        .pipe(gulp.dest('./build/'))
 );
 
 gulp.task('compressImage', 

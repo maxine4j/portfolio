@@ -1,0 +1,17 @@
+$col-caret: $col-text;
+
+@keyframes typing {
+    from { width: 0% }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: $col-caret; }
+    50% { border-color: transparent }
+}
+
+.typewriter {
+    border-right: .5em solid $col-caret; // cursor
+    white-space: nowrap; // keep content on one line
+    animation: blink-caret 0.75s step-end infinite;
+}

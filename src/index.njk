@@ -7,15 +7,13 @@
 
 {% block content %}
     <div class="title">
-        <h1>This is the title line.</h1>
+        <h1 class="typewriter">tim-ings $&nbsp</h1>
     </div>
-
     <div class="project-container">
-        {{ project.card('Dominion', 'Dominion is a multiplayer 4X grand stratergy game based on Civilization 5 and written in C# using XNA/MonoGame. Every game board is procedurally generated and units move with A* pathfinding.') }}
-        {{ project.card('Dominion', 'Dominion is a multiplayer 4X grand stratergy game based on Civilization 5 and written in C# using XNA/MonoGame. Every game board is procedurally generated and units move with A* pathfinding.') }}
-        {{ project.card('Dominion', 'Dominion is a multiplayer 4X grand stratergy game based on Civilization 5 and written in C# using XNA/MonoGame. Every game board is procedurally generated and units move with A* pathfinding.') }}
-        {{ project.card('Dominion', 'Dominion is a multiplayer 4X grand stratergy game based on Civilization 5 and written in C# using XNA/MonoGame. Every game board is procedurally generated and units move with A* pathfinding.') }}
-        {{ project.card('Dominion', 'Dominion is a multiplayer 4X grand stratergy game based on Civilization 5 and written in C# using XNA/MonoGame. Every game board is procedurally generated and units move with A* pathfinding.') }}
-        {{ project.card('Dominion', 'Dominion is a multiplayer 4X grand stratergy game based on Civilization 5 and written in C# using XNA/MonoGame. Every game board is procedurally generated and units move with A* pathfinding.') }}
+    {% for proj in data.projects %}
+        {{ project.new(proj) }}
+    {% else %}
+        <h1>NO PROJECT DATA</h1>
+    {% endfor %}
     </div>
 {% endblock %}

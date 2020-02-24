@@ -1,0 +1,14 @@
+.button {
+    display: inline-block;
+    margin: 2px;
+    padding: 5px;
+    border: 1px solid $col-border;
+    background-color: $col-background;
+    color: $col-text;
+    border-radius: 5px;
+    text-decoration: none;
+
+    &:hover {
+        background-color: lighten($col-background, 15%);
+    }
+}

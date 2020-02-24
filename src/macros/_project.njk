@@ -1,18 +1,20 @@
-{% macro card(title, description, links) %}
-<div class="project" id="proj-dominion">
-    <img class="project-bg" draggable="false" src="https://tim-ings.com/img/headers/Dominion.png">
-    <div class="project-info">
-        <div class="project-title">
-            <h2>{{ title }}</h2>
+{% import "macros/_button.njk" as button %}
+
+{% macro new(project) %}
+<div class="project" id="proj-{{ project.slug }}">
+    <img class="background" draggable="false" src="{{ project.header_img_url }}">
+    <div class="content">
+        <div class="title">
+            <h2>{{ project.name }}</h2>
         </div>
-        <div class="project-desc">
+        <div class="description">
             <div class="project-links">
-                <a class="button" target="_blank" rel="noopener rereferrer" href="https://github.com/tim-ings/dominion">
-                    <img src="https://tim-ings.com/img/logos/github_light.png">
-                    <span>GitHub</span>
-                </a>
+                {% for link in links %}
+                    {{ button.new(link, "github", "https://github.com/tim-ings/dominion") }}
+                    {{ button.link(link, "github", "https://github.com/tim-ings/dominion") }}
+                {% endfor%}
             </div>
-            <p>{{ description }}</p>
+            <p>{{ project.description }}</p>
         </div>
     </div>
 </div>
