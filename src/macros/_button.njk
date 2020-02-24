@@ -1,10 +1,6 @@
 {% macro new(text, icon, href) %}
 <a class="button" target="_blank" rel="noopener rereferrer" href="{{ href }}">
-    <span class="ico ico-github"></span>
+    <span class="ico ico-{{ icon }}"></span>
     {{ text }}
 </a>
-{% endmacro %}
-
-{% macro link(link) %}
-{{ new("LINK", "github", "http://google.com") }}
 {% endmacro %}

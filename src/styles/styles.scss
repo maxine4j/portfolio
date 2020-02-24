@@ -20,7 +20,7 @@ body {
     padding: 0;
 }
 
-.title {
+.page-title {
     h1 {
         margin: 20px;
         font-size: 2.75rem;
@@ -28,6 +28,20 @@ body {
         display: table;
         color: $col-text;
     }
+}
+
+.category-header {
+    text-align: center;
+    color: $col-text;
+    font-size: 2rem;
+}
+
+hr {
+    height: 10px;
+    background-color: rgba(116, 116, 116, 0.274);
+    border: none;
+    width: 66%;
+    margin-bottom: 200px;
 }
 
 @import "project";

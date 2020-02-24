@@ -1,20 +1,19 @@
 {% import "macros/_button.njk" as button %}
 
 {% macro new(project) %}
-<div class="project" id="proj-{{ project.slug }}">
-    <img class="background" draggable="false" src="{{ project.header_img_url }}">
+<div class="project" id="proj-{{ project.slug }}" data-categories="{{ project.categories }}">
+    <img class="background" draggable="false" src="{{ project.header }}">
     <div class="content">
         <div class="title">
-            <h2>{{ project.name }}</h2>
+            <h2><span>{{ project.name }}</span></h2>
         </div>
         <div class="description">
-            <div class="project-links">
-                {% for link in links %}
-                    {{ button.new(link, "github", "https://github.com/tim-ings/dominion") }}
-                    {{ button.link(link, "github", "https://github.com/tim-ings/dominion") }}
+            <p>{{ project.description }}</p>
+            <div class="links">
+                {% for link in project.links %}
+                    {{ button.new(link.text, link.icon, link.href) }}
                 {% endfor%}
             </div>
-            <p>{{ project.description }}</p>
         </div>
     </div>
 </div>

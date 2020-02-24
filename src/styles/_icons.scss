@@ -10,14 +10,17 @@ $icon-dim: 1.5em;
     vertical-align: -0.4em;
 }
 
+.ico-live {
+    background-image: url(img/icons/live.png);
+}
 .ico-download {
-    background-image: url(img/icons/download_light.png);
+    background-image: url(img/icons/download.png);
 }
 .ico-curse {
     background-image: url(img/icons/curse.png);
 }
 .ico-github {
-    background-image: url(img/icons/github_light.png);
+    background-image: url(img/icons/github.png);
 }
 .ico-bootstrap {
     background-image: url(img/icons/bootstrap.png);
@@ -98,7 +101,7 @@ $icon-dim: 1.5em;
     background-image: url(img/icons/networking.png);
 }
 .ico-opengl {
-    background-image: url(img/icons/opengl_sq.png);
+    background-image: url(img/icons/opengl.png);
 }
 .ico-3dgraphics {
     background-image: url(img/icons/3dgraphics.png);

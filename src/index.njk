@@ -6,14 +6,57 @@
 {% endblock %}
 
 {% block content %}
-    <div class="title">
+    <div class="page-title">
         <h1 class="typewriter">tim-ings $&nbsp</h1>
     </div>
+
+    <h2 class="category-header">Featured</h2>
     <div class="project-container">
-    {% for proj in data.projects %}
-        {{ project.new(proj) }}
-    {% else %}
-        <h1>NO PROJECT DATA</h1>
-    {% endfor %}
+        {% for proj in data.categories.featured %}
+            {{ project.new(proj) }}
+        {% else %}
+            <h1>NO PROJECT DATA</h1>
+        {% endfor %}
     </div>
+    <hr />
+
+    <h2 class="category-header">Websites</h2>
+    <div class="project-container">
+        {% for proj in data.categories.websites %}
+            {{ project.new(proj) }}
+        {% else %}
+            <h1>NO PROJECT DATA</h1>
+        {% endfor %}
+    </div>
+    <hr />
+
+    <h2 class="category-header">Games</h2>
+    <div class="project-container">
+        {% for proj in data.categories.games %}
+            {{ project.new(proj) }}
+        {% else %}
+            <h1>NO PROJECT DATA</h1>
+        {% endfor %}
+    </div>
+    <hr />
+
+    <h2 class="category-header">Programs</h2>
+    <div class="project-container">
+        {% for proj in data.categories.programs %}
+            {{ project.new(proj) }}
+        {% else %}
+            <h1>NO PROJECT DATA</h1>
+        {% endfor %}
+    </div>
+    <hr />
+
+    <h2 class="category-header">AddOns</h2>
+    <div class="project-container">
+        {% for proj in data.categories.addons %}
+            {{ project.new(proj) }}
+        {% else %}
+            <h1>NO PROJECT DATA</h1>
+        {% endfor %}
+    </div>
+    <hr />
 {% endblock %}

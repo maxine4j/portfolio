@@ -1,12 +1,16 @@
 $card-width: 320px;
 $card-height: 400px;
-
+$bg-opacity: 0.99;
+$col-bg-alpha: rgba($col-background, $bg-opacity);
 
 .project-container {
     display: flex;
     flex-wrap: wrap;
-    width: 100vw;
+    width: 100%;
     justify-content: center;
+
+    max-width: $card-width * 4;
+    margin: auto;
 
     .project {
         position: relative;
@@ -33,24 +37,42 @@ $card-height: 400px;
 
             .title {
                 display: inline-block;
-                background-color: rgba(0,0,0,0.8);
-                backdrop-filter: blur(5px);
                 margin: 10px;
 
                 h2 {
                     margin: 0;
-                    padding: 0 10px;
+                    padding: 0;
                     font-size: 2.5rem;
+
+                    line-height: 1.8em;
+                    font-size: 1.7em;
+
+                    span {
+                        padding: 0.2em;
+                        background-color: $col-bg-alpha;
+                        box-decoration-break: clone;
+                        border: 1px solid white;
+                    }
                 }
             }
 
             .description {
                 position: absolute;
-                background-color: rgba(0, 0, 0, 0.8);
+                background-color: $col-bg-alpha;
                 padding: 10px;
                 transform: translateY(100%);
                 bottom: 0;
                 transition: transform 0.3s;
+                border-top: 1px solid white;
+
+                p {
+                    margin: 5px 5px 10px 5px;
+                }
+
+                .links {
+                    display: flex;
+                    flex-wrap: wrap;
+                }
             }
 
             &:hover > .description {
