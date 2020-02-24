@@ -99,6 +99,12 @@ gulp.task('serve',
     )
 );
 
-gulp.task('build', gulp.parallel('sass', 'compressImage', 'compressJs', 'nunjucks'));
+gulp.task(
+    'copy-favicon', 
+    () => gulp.src('./src/favicon.ico')
+        .pipe(gulp.dest('./build/'))
+);
+
+gulp.task('build', gulp.parallel('copy-favicon', 'sass', 'compressImage', 'compressJs', 'nunjucks'));
 
 gulp.task('default', gulp.series('build', 'serve'));
