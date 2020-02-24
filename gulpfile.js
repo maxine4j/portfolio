@@ -71,6 +71,16 @@ gulp.task('js-watch',
     )
 );
 
+// ensure we run compressImage before reloading
+gulp.task('img-watch', 
+    gulp.series(
+        'compressImage', 
+        (done) => {
+            browserSync.reload();
+            done();
+        }
+    )
+);
 // static serve and watch scss/njk
 gulp.task('serve', 
     gulp.series(
@@ -83,7 +93,8 @@ gulp.task('serve',
             gulp.watch('./src/styles/**/*.scss', gulp.task('sass'));
             gulp.watch('./src/js/**/*.js', gulp.task('js-watch'));
             gulp.watch('./src/**/*.njk', gulp.task('nunjucks-html-watch'));
-            gulp.watch('./src/data/**/*.json', gulp.task('nunjucks-html-watch'))
+            gulp.watch('./src/data/**/*.json', gulp.task('nunjucks-html-watch'));
+            gulp.watch('./src/img/**/*', gulp.task('img-watch'));
         }
     )
 );
