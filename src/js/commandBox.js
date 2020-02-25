@@ -67,10 +67,7 @@ if (supportsTouch()) { // disable on mobile
             man: "Reloads the page",
         },
         clear: {
-            run: args => { 
-                cmdLog.textContent = '';
-                cmdLog.style.height = '300px';
-            },
+            run: args => cmdLog.textContent = '',
             man: "Clear the terminal screen",
         },
         close: {
