@@ -44,6 +44,20 @@ hr {
     margin-bottom: 200px;
 }
 
+#cmd {
+    font: inherit;
+    color: $col-text;
+    height: 1em;
+    overflow: auto;
+    background: none;
+    border: none;
+    caret-color: rgba(0,0,0,0);
+
+    &:focus {
+        outline: none;
+    }
+}
+
 @import "project";
 @import "icons";
 @import "button";
