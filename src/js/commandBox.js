@@ -47,7 +47,10 @@ if (supportsTouch()) { // disable on mobile
             run: args => {
                 const valids = ['featured', 'websites', 'games', 'programs', 'addons'];
                 if (args[1] && valids.indexOf(args[1]) >= 0) location.replace(`#${args[1]}`);
-                else cout(`Unknown category: ${args[1] || '\"\"'}`);
+                else {
+                    cout(`Unknown category: ${args[1] || '\"\"'}`);
+                    cout(`Available categories:\n    - ${valids.join('\n    - ')}`);
+                }
             },
             man: "Scrolls to the given project category",
         },
