@@ -62,6 +62,10 @@ if (supportsTouch()) { // disable on mobile
             run: () => window.open('./resume'),
             man: "Opens my résumé",
         },
+        mail: {
+            run: () => window.open('mailto:tim@tim-ings.com'),
+            man: "Send me an email"
+        },
         reload: {
             run: args => location.reload(),
             man: "Reloads the page",
