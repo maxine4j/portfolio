@@ -105,6 +105,12 @@ gulp.task(
         .pipe(gulp.dest('./build/'))
 );
 
-gulp.task('build', gulp.parallel('copy-favicon', 'sass', 'compressImage', 'compressJs', 'nunjucks'));
+gulp.task(
+    'copy-content', 
+    () => gulp.src('./src/content/**/*')
+        .pipe(gulp.dest('./build/content/'))
+);
+
+gulp.task('build', gulp.parallel('copy-favicon', 'copy-content', 'sass', 'compressImage', 'compressJs', 'nunjucks'));
 
 gulp.task('default', gulp.series('build', 'serve'));

@@ -12,6 +12,15 @@
         margin: 0;
         padding: 0;
     }
+
+    a {
+        color: $col-text;
+        margin-right: auto;
+
+        &:hover {
+            color: darken($col-text, 20%);
+        }
+    }
 }
 
 .log.hidden {

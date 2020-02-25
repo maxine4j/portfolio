@@ -1,5 +1,11 @@
 const supportsTouch = () => 'ontouchstart' in document.documentElement;
 
+const config = {
+    github: 'https://github.com/tim-ings',
+    email: 'tim@tim-ings.com',
+    resume: 'tim-ings-resume',
+}
+
 const cmdBox = document.getElementById('cmd');
 const cmdLog = document.getElementById('log');
 
@@ -24,6 +30,17 @@ if (supportsTouch()) { // disable on mobile
         const msg = document.createElement('pre');
         msg.textContent = (s || '').toString().replace('\t', '    ');
         cmdLog.appendChild(msg);
+    }
+
+    const lnout = (text, href, click=false) => {
+        const a = document.createElement('a');
+        a.textContent = text;
+        a.href = href;
+        a.download = '';
+        a.target = '_blank';
+        a.rel = 'noopener noreferrer';
+        cmdLog.appendChild(a);
+        if (click) a.click();
     }
 
     // command running
@@ -55,16 +72,20 @@ if (supportsTouch()) { // disable on mobile
             man: "Scrolls to the given project category",
         },
         github: {
-            run: () => window.open('https://github.com/tim-ings'),
+            run: args => lnout(config.github, config.github, true),
             man: "Opens my GitHub profile",
         },
         resume: {
-            run: () => window.open('./resume'),
-            man: "Opens my résumé",
+            run: args => {
+                const valids = { pdf: 'pdf', doc: 'docx', world: 'docx', word: 'docx', office: 'docx' };
+                const file = `tim-ings-resume.${valids[args[1]] || 'pdf'}`;
+                lnout(file, `./content/${file}`, true);
+            },
+            man: "Download my résumé. Provide argument `docx` for microsoft office format.",
         },
         mail: {
-            run: () => window.open('mailto:tim@tim-ings.com'),
-            man: "Send me an email"
+            run: args => lnout(config.email, `mailto:${config.email}`, true),
+            man: "Send me an email",
         },
         reload: {
             run: args => location.reload(),
