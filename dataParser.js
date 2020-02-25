@@ -36,7 +36,7 @@ const processProjects = (projects) => {
             name: proj.name,
             slug: proj.slug,
             description: proj.description,
-            header: `img/headers/${proj.slug}.png`,
+            header: `img/headers/${proj.slug.toLowerCase()}.png`,
             categories: proj.categories.join(),
             links,
         }

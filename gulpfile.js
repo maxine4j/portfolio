@@ -13,7 +13,7 @@ const getData = require('./dataParser');
 gulp.task('compressJs', 
     () => gulp.src('./src/js/**/*.js')
         .pipe(terser())
-        .pipe(gulp.dest('./build/'))
+        .pipe(gulp.dest('./dist/'))
 );
 
 gulp.task('compressImage', 
@@ -22,7 +22,7 @@ gulp.task('compressImage',
             progressive: true,
             optimizationLevel: 3
         }))
-        .pipe(gulp.dest('./build/img'))
+        .pipe(gulp.dest('./dist/img'))
 );
 
 gulp.task('sass', 
@@ -32,7 +32,7 @@ gulp.task('sass',
             cascade: false
         }))
         .pipe(cleanCSS())
-        .pipe(gulp.dest('./build/'))
+        .pipe(gulp.dest('./dist/'))
         .pipe(browserSync.stream())
 );
 
@@ -46,7 +46,7 @@ gulp.task('nunjucks',
             collapseWhitespace: true,
             removeComments: true
         }))
-        .pipe(gulp.dest('./build/'))
+        .pipe(gulp.dest('./dist/'))
 );
 
 // ensure we run nunjucks before reloading
@@ -88,7 +88,7 @@ gulp.task('serve',
         'nunjucks-html-watch', 
         () => {
             browserSync.init({
-                server: './build/',
+                server: './dist/',
             });
             gulp.watch('./src/styles/**/*.scss', gulp.task('sass'));
             gulp.watch('./src/js/**/*.js', gulp.task('js-watch'));
@@ -102,15 +102,21 @@ gulp.task('serve',
 gulp.task(
     'copy-favicon', 
     () => gulp.src('./src/favicon.ico')
-        .pipe(gulp.dest('./build/'))
+        .pipe(gulp.dest('./dist/'))
 );
 
 gulp.task(
     'copy-content', 
     () => gulp.src('./src/content/**/*')
-        .pipe(gulp.dest('./build/content/'))
+        .pipe(gulp.dest('./dist/content/'))
 );
 
-gulp.task('build', gulp.parallel('copy-favicon', 'copy-content', 'sass', 'compressImage', 'compressJs', 'nunjucks'));
+gulp.task(
+    'copy-cname', 
+    () => gulp.src('./src/CNAME')
+        .pipe(gulp.dest('./dist/'))
+);
+
+gulp.task('build', gulp.parallel('copy-content', 'copy-favicon', 'copy-cname', 'sass', 'compressImage', 'compressJs', 'nunjucks'));
 
 gulp.task('default', gulp.series('build', 'serve'));

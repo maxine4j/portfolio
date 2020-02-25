@@ -5,7 +5,9 @@
   "license": "SEE LICENSE IN LICENSE",
   "scripts": {
     "watch": "yarn gulp",
-    "build": "yarn gulp build"
+    "build": "yarn gulp build",
+    "clean": "rm -rf ./dist",
+    "deploy": "yarn build && yarn gh-pages -d ./dist"
   },
   "browserslist": [
     "> 1%",
@@ -26,6 +28,7 @@
   },
   "devDependencies": {
     "browser-sync": "^2.26.7",
+    "gh-pages": "^2.2.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
     "gulp-clean-css": "^4.2.0",

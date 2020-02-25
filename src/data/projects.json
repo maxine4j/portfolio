@@ -225,8 +225,8 @@
         "curseUrl": "https://www.curseforge.com/wow/addons/arwicaltmanager"
     },
     {
-        "name": "ElvUI Recount Recount Inherit Global Fade",
-        "slug": "ElvUI_RecountRecountIGF",
+        "name": "ElvUI Recount Inherit Global Fade",
+        "slug": "ElvUI_RecountIGF",
         "categories": [
             "addon"
         ],
