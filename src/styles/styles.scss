@@ -6,10 +6,10 @@ $col-border: #ffffff;
 $col-background: #1d1d1d;
 
 $breakpoints: (
-    phone: 640px, 
-    tablet: 768px, 
-    desktop: 1024px
-) !default;
+    'phone': 640px, 
+    'tablet': 768px, 
+    'desktop': 1024px
+);
 
 
 body {
@@ -27,6 +27,33 @@ body {
         white-space: nowrap;
         display: table;
         color: $col-text;
+    }
+
+    .links {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+
+        a {
+            margin: 10px;
+            padding: 5px;
+            text-align: center;
+            color: darken($col-text, 20%);
+            border: 1px solid darken($col-text, 20%);
+            text-decoration: none;
+            white-space: nowrap;
+            @include media("<tablet") {
+                padding: 10px;
+            }
+            @include media("<phone") {
+                flex: 1;
+            }
+    
+            &:hover {
+                color: $col-text;
+                border-color: $col-text;
+            }
+        }
     }
 }
 
