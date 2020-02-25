@@ -1,0 +1,23 @@
+.log {
+    background-color: #000000;
+    max-height: 300px;
+    width: 100%;
+    padding: 0 10px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    box-sizing: border-box;
+
+    pre {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.log.hidden {
+    display: none;
+    height: 0;
+    transform: translateY(-100%);
+}
+
+
