@@ -130,4 +130,33 @@ if (supportsTouch()) { // disable on mobile
             updateWidth();
         }
     });
+
+    const demoType = (text, speed=50, erase=true, eraseSpeed=20, eraseGap=1000) => {
+        return new Promise(resolve => {
+            for (let i = 0; i < text.length; i++) {
+                setTimeout(() => {
+                    cmdBox.value += text[i];
+                    updateWidth();
+                }, speed * i);
+                if (erase) {
+                    setTimeout(() => {
+                        cmdBox.value = cmdBox.value.slice(0, cmdBox.value.length - 1);
+                        updateWidth();
+                        if (i >= text.length - 1) resolve();
+                    }, eraseSpeed * i + (text.length * speed) + eraseGap);
+                }
+            }
+        });
+    }
+
+    window.addEventListener('load', ev => {
+        setTimeout(() => {
+            demoType('hello world')
+            .then(() => demoType('try typing a command'))
+            .then(() => demoType('goto games', 30, true, 15, 300))
+            .then(() => demoType('github', 30, true, 15, 300))
+            .then(() => demoType('js demoType("hello")', 15, true, 10, 300))
+            .then(() => demoType('help', 30, true, 15, 1000))
+        }, 1000);
+    });
 }
