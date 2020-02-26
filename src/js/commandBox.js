@@ -160,3 +160,8 @@ if (supportsTouch()) { // disable on mobile
         }, 1000);
     });
 }
+
+// fixes for mobile project hover
+document.addEventListener('gesturestart', ev => ev.preventDefault());
+document.addEventListener('gestureend', ev => ev.preventDefault());
+document.addEventListener('gesturechange', ev => ev.preventDefault());
