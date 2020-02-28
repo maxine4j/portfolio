@@ -119,7 +119,15 @@ if (supportsTouch()) { // disable on mobile
     }
 
     window.addEventListener('keydown', ev => {
-        if (ev.key === 'ArrowUp' || ev.key === 'ArrowDown' || ev.key === ' ') return; // preserve keyboard scrolling
+        if (ev.key === 'ArrowUp' 
+        || ev.key === 'ArrowDown' 
+        || ev.key === ' '
+        || ev.key === 'Control'
+        || ev.key === 'Shift'
+        || ev.key === 'Alt'
+        || ev.key === 'Meta'
+        || (ev.key === 'c' && ev.ctrlKey)
+        || (ev.key === 'a' && ev.ctrlKey)) return; // preserve keyboard scrolling
 
         cmdBox.focus(); // focus the cmd box on any typing
 
