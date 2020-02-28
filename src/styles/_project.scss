@@ -103,6 +103,10 @@ $col-bg-alpha: rgba($col-background, $bg-opacity);
                         &:hover > .tech-name-wrapper {
                             display: block;
                         }
+
+                        &:hover {
+                            background-color: lighten($col-bg-alpha, 25%);
+                        }
                     }
                 }
 
