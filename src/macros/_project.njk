@@ -14,7 +14,9 @@
             <div class="tech-tags">
                 {% for tech in project.tech %}
                     <span class="tech-tag ico ico-{{ tech.toLowerCase() }}">
-                        <span class="tech-name">{{ tech }}</span>
+                        <span class="tech-name-wrapper">
+                            <span class="tech-name">{{ tech }}</span>
+                        </span>
                     </span>
                 {% endfor %}
             </div>

@@ -73,23 +73,34 @@ $col-bg-alpha: rgba($col-background, $bg-opacity);
                 }
 
                 .tech-tags {
+                    margin-bottom: 8px;
+
                     .tech-tag {
                         background-color: lighten($col-bg-alpha, 15%);
                         background-position: 2px 2px;
                         padding: 2px;
                         margin: 2px;
+                        
+                        $dim: 18px; 
+                        width: $dim;
+                        height: $dim;
+                        background-size: $dim $dim;
 
-                        .tech-name {
-                            position: absolute;
+                        .tech-name-wrapper {
                             display: none;
-                            top: -25px;
-                            background-color: lighten($col-bg-alpha, 15%);
-                            padding: 5px 10px;
-                            border-radius: 5px;
-                            border: 1px solid white;
+                            position: relative;
+                            top: -200%;
+    
+                            .tech-name {
+                                position: absolute;
+                                background-color: lighten($col-bg-alpha, 15%);
+                                padding: 5px 10px;
+                                border-radius: 5px;
+                                border: 1px solid white;
+                            }
                         }
 
-                        &:hover > .tech-name {
+                        &:hover > .tech-name-wrapper {
                             display: block;
                         }
                     }
