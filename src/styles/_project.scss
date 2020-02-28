@@ -75,6 +75,10 @@ $col-bg-alpha: rgba($col-background, $bg-opacity);
                 .links {
                     display: flex;
                     flex-wrap: wrap;
+
+                    a {
+                        margin-right: 10px;
+                    }
                 }
             }
 
