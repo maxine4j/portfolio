@@ -72,6 +72,29 @@ $col-bg-alpha: rgba($col-background, $bg-opacity);
                     margin: 5px 5px 10px 5px;
                 }
 
+                .tech-tags {
+                    .tech-tag {
+                        background-color: lighten($col-bg-alpha, 15%);
+                        background-position: 2px 2px;
+                        padding: 2px;
+                        margin: 2px;
+
+                        .tech-name {
+                            position: absolute;
+                            display: none;
+                            top: -25px;
+                            background-color: lighten($col-bg-alpha, 15%);
+                            padding: 5px 10px;
+                            border-radius: 5px;
+                            border: 1px solid white;
+                        }
+
+                        &:hover > .tech-name {
+                            display: block;
+                        }
+                    }
+                }
+
                 .links {
                     display: flex;
                     flex-wrap: wrap;

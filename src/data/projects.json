@@ -2,11 +2,18 @@
     {
         "name": "JNS Gardening Solutions",
         "slug": "jnsgardening",
+        "description": "React/Express based website developed for local gardening business. Includes booking system and administrator back end.",
         "categories": [
             "featured",
             "websites"
         ],
-        "description": "React/Express based website developed for local gardening business. Includes booking system and administrator back end.",
+        "tech": [
+            "React",
+            "Nodejs",
+            "HTML5",
+            "CSS",
+            "JavaScript"
+        ],
         "links": [
             "web"
         ],
@@ -15,11 +22,19 @@
     {
         "name": "UWA Pharmacy Case",
         "slug": "case",
+        "description": "Web application developed by a team of UWA students for Dr. Kenneth Lee and the UWA Master of Pharmacy course. Allows students to create, practice, share, and comment on real life case studies.",
         "categories": [
             "featured",
             "websites"
         ],
-        "description": "Web application developed by a team of UWA students for Dr. Kenneth Lee and the UWA Master of Pharmacy course. Allows students to create, practice, share, and comment on real life case studies.",
+        "tech": [
+            "Django",
+            "Python",
+            "HTML5",
+            "Sass",
+            "Bootstrap",
+            "JavaScript"
+        ],
         "links": [
             "github"
         ]
@@ -27,11 +42,19 @@
     {
         "name": "Bastion Droptimizer",
         "slug": "DroptimizerServer",
+        "description": "Aggregates the results of raidbots.com SimulationCraft reports for an entire raid team enabling leadership to make better decisions about how to distribute loot.",
         "categories": [
             "featured",
             "websites"
         ],
-        "description": "Aggregates the results of raidbots.com SimulationCraft reports for an entire raid team enabling leadership to make better decisions about how to distribute loot.",
+        "tech": [
+            "React",
+            "Nodejs",
+            "HTML5",
+            "CSS",
+            "JavaScript",
+            "WoW"
+        ],
         "links": [
             "github",
             "web"
@@ -41,11 +64,16 @@
     {
         "name": "Dominion",
         "slug": "dominion",
+        "description": "Multiplayer 4X grand strategy game based on Civilization 5. Procedural board generation and A* pathfinding.",
         "categories": [
             "featured",
             "game"
         ],
-        "description": "Multiplayer 4X grand strategy game based on Civilization 5. Procedural board generation and A* pathfinding.",
+        "tech": [
+            "CSharp",
+            "MonoGame",
+            "XNA"
+        ],
         "links": [
             "github",
             "download"
@@ -54,11 +82,19 @@
     {
         "name": "MMO",
         "slug": "mmo",
+        "description": "Browser MMORPG built with TypeScript, THREE.js, and socket.io.",
         "categories": [
             "featured",
             "games"
         ],
-        "description": "Browser MMORPG built with TypeScript, THREE.js, and socket.io.",
+        "tech": [
+            "TypeScript",
+            "threejs",
+            "OpenGL",
+            "Nodejs",
+            "HTML5",
+            "Sass"
+        ],
         "links": [
             "github",
             "web"
@@ -68,10 +104,15 @@
     {
         "name": "Infinite Frontier",
         "slug": "infinitefrontier",
+        "description": "Space themed 4X grand strategy game. Solar system generation and colonisable planets.",
         "categories": [
             "game"
         ],
-        "description": "Space themed 4X grand strategy game. Solar system generation and colonisable planets.",
+        "tech": [
+            "CSharp",
+            "MonoGame",
+            "XNA"
+        ],
         "links": [
             "github",
             "download"
@@ -80,10 +121,16 @@
     {
         "name": "Portfolio Site",
         "slug": "portfolio",
+        "description": "Static portfolio site built with Nunjucks. Try out the terminal right now by typing `help` and pressing enter!",
         "categories": [
             "websites"
         ],
-        "description": "Static portfolio site built with Nunjucks. Try out the terminal right now by typing `help` and pressing enter!",
+        "tech": [
+            "Nunjucks",
+            "HTML5",
+            "Sass",
+            "JavaScript"
+        ],
         "links": [
             "github",
             "web"
@@ -93,10 +140,18 @@
     {
         "name": "Gabr",
         "slug": "gabr",
+        "description": "Microblogging website built with Django, Sass, and Bootstrap.",
         "categories": [
             "websites"
         ],
-        "description": "Microblogging website built with Django, Sass, and Bootstrap.",
+        "tech": [
+            "Django",
+            "Python",
+            "HTML5",
+            "Sass",
+            "Bootstrap",
+            "JavaScript"
+        ],
         "links": [
             "github"
         ]
@@ -104,10 +159,18 @@
     {
         "name": "Movie Rankings",
         "slug": "MovieRankings",
+        "description": "Movie Rankings is a website that allows users show off their favourite movies and create polls about them. Built with Flask, Jinja2 and Bootstrap.",
         "categories": [
             "websites"
         ],
-        "description": "Movie Rankings is a website that allows users show off their favourite movies and create polls about them. Built with Flask, Jinja2 and Bootstrap.",
+        "tech": [
+            "Flask",
+            "Python",
+            "HTML5",
+            "CSS",
+            "Bootstrap",
+            "JavaScript"
+        ],
         "links": [
             "github",
             "web"
@@ -115,12 +178,19 @@
         "demoUrl": "https://movies.tim-ings.com/"
     },
     {
-        "name": "Old School Runescape World Ping",
+        "name": "Old School RuneScape World Ping",
         "slug": "OSRSWorldPing",
+        "description": "Check your ping to the Old School RuneScape game servers.",
         "categories": [
             "websites"
         ],
-        "description": "Check your ping to the Old School Runescape game servers.",
+        "tech": [
+            "HTML5",
+            "CSS",
+            "Bootstrap",
+            "JavaScript",
+            "RuneScape"
+        ],
         "links": [
             "github",
             "web"
@@ -130,10 +200,17 @@
     {
         "name": "Attendance Report",
         "slug": "AttendanceReport",
+        "description": "Generate a report showing how often players are late, leave early, or fail to attend World of Warcraft raids based on their presence in combat log data retrieved from warcraftlogs.com.",
         "categories": [
             "websites"
         ],
-        "description": "Generate a report showing how often players are late, leave early, or fail to attend World of Warcraft raids based on their presence in combat log data retrieved from warcraftlogs.com.",
+        "tech": [
+            "HTML5",
+            "CSS",
+            "Bootstrap",
+            "JavaScript",
+            "WoW"
+        ],
         "links": [
             "github",
             "web"
@@ -143,10 +220,14 @@
     {
         "name": "Arwic Bot",
         "slug": "ArwicBot",
+        "description": "Modular bot for the chat app Discord. Includes user permissions, YouTube music player, server administration, embedded messages, World of Warcraft utilities, and fun hidden responses.",
         "categories": [
             "programs"
         ],
-        "description": "Modular bot for the chat app Discord. Includes user permissions, YouTube music player, server administration, embedded messages, World of Warcraft utilities, and fun hidden responses.",
+        "tech": [
+            "Python",
+            "Discord"
+        ],
         "links": [
             "github"
         ]
@@ -154,10 +235,14 @@
     {
         "name": "Needs More JPEG Bot",
         "slug": "NeedsMoreJPEGBot",
+        "description": "Reddit bot that responds to commenters' requests for a lower quality version of an image.",
         "categories": [
             "programs"
         ],
-        "description": "Reddit bot that responds to commenters' requests for a lower quality version of an image.",
+        "tech": [
+            "Python",
+            "Reddit"
+        ],
         "links": [
             "github"
         ]
@@ -165,10 +250,14 @@
     {
         "name": "Run",
         "slug": "run",
+        "description": "Single button infinite runner game developed in Unity. Press any key to make the player jump off the ground or wall he is stuck to.",
         "categories": [
             "games"
         ],
-        "description": "Single button infinite runner game developed in Unity. Press any key to make the player jump off the ground or wall he is stuck to.",
+        "tech": [
+            "Unity",
+            "CSharp"
+        ],
         "links": [
             "github",
             "web"
@@ -178,10 +267,15 @@
     {
         "name": "Pong",
         "slug": "pong",
+        "description": "Pong implemented with HTML5 canvas.",
         "categories": [
             "games"
         ],
-        "description": "Pong implemented with HTML5 canvas.",
+        "tech": [
+            "HTML5",
+            "CSS",
+            "JavaScript"
+        ],
         "links": [
             "github",
             "web"
@@ -191,10 +285,14 @@
     {
         "name": "ElvUI Better Talent Frame",
         "slug": "ElvUI_BetterTalentFrame",
+        "description": "Improves the talent frame by adding customisable profiles and reimplementing the ability to view your selected talents from non-active specs.",
         "categories": [
             "addon"
         ],
-        "description": "Improves the talent frame by adding customisable profiles and reimplementing the ability to view your selected talents from non-active specs.",
+        "tech": [
+            "Lua",
+            "WoW"
+        ],
         "links": [
             "github",
             "curse"
@@ -205,10 +303,16 @@
     {
         "name": "Wow Discord Rich Presence",
         "slug": "WowDiscordRichPresence",
+        "description": "Discord Rich Presence for World of Warcraft. The AddOn gathers data from the game and displays it to the python script, which updates the users Discord presence.",
         "categories": [
             "addon"
         ],
-        "description": "Discord Rich Presence for World of Warcraft. The AddOn gathers data from the game and displays it to the python script, which updates the users Discord presence.",
+        "tech": [
+            "Python",
+            "Discord",
+            "Lua",
+            "WoW"
+        ],
         "links": [
             "github"
         ]
@@ -216,10 +320,14 @@
     {
         "name": "Arwic Alt Manager",
         "slug": "ArwicAltManager",
+        "description": "Stores useful data about every character on a player's account and displays it in a table.",
         "categories": [
             "addon"
         ],
-        "description": "Stores useful data about every character on a player's account and displays it in a table.",
+        "tech": [
+            "Lua",
+            "WoW"
+        ],
         "links": [
             "github",
             "curse"
@@ -230,10 +338,14 @@
     {
         "name": "ElvUI Recount Inherit Global Fade",
         "slug": "ElvUI_RecountIGF",
+        "description": "An extension of the popular AddOn ElvUI that causes Recount to respect the interface fading feature.",
         "categories": [
             "addon"
         ],
-        "description": "An extension of the popular AddOn ElvUI that causes Recount to respect the interface fading feature.",
+        "tech": [
+            "Lua",
+            "WoW"
+        ],
         "links": [
             "github",
             "curse"
@@ -244,10 +356,14 @@
     {
         "name": "Simc Dungeon Journal",
         "slug": "simcdungeonjournal",
+        "description": "Provides a function to generate SimulationCraft input based on boss loot tables found in the dungeon journal.",
         "categories": [
             "addon"
         ],
-        "description": "Provides a function to generate SimulationCraft input based on boss loot tables found in the dungeon journal.",
+        "tech": [
+            "Lua",
+            "WoW"
+        ],
         "links": [
             "github",
             "curse"

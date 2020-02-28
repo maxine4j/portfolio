@@ -11,6 +11,13 @@
             {% if count %}
                 <p style="color: {{ countColour }}">{{ count.toLocaleString() }}+ {{ countWord }}</p>
             {% endif %}
+            <div class="tech-tags">
+                {% for tech in project.tech %}
+                    <span class="tech-tag ico ico-{{ tech.toLowerCase() }}">
+                        <span class="tech-name">{{ tech }}</span>
+                    </span>
+                {% endfor %}
+            </div>
             <p>{{ project.description }}</p>
             <div class="links">
                 {% for link in project.links %}

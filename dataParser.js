@@ -47,6 +47,7 @@ const processProjects = (projects) => {
             header: headerImgFormatter(proj.slug),
             categories: proj.categories.join(),
             links,
+            tech: proj.tech,
             downloads: proj.downloads
         }
     });
