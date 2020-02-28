@@ -85,6 +85,7 @@
         ],
         "description": "Static portfolio site built with Nunjucks. Try out the terminal right now by typing `help` and pressing enter!",
         "links": [
+            "github",
             "web"
         ],
         "demoUrl": "https://tim-ings.com/"
