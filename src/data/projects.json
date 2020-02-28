@@ -31,7 +31,7 @@
             "featured",
             "websites"
         ],
-        "description": "Aggregates the results of raidbots.com simulationcraft reports for an entire raid team enabling leadership to make better decisions about how to distribute loot.",
+        "description": "Aggregates the results of raidbots.com SimulationCraft reports for an entire raid team enabling leadership to make better decisions about how to distribute loot.",
         "links": [
             "github",
             "web"
@@ -45,7 +45,7 @@
             "featured",
             "game"
         ],
-        "description": "Multiplayer 4X grand stratergy game based on Civilization 5. Procedural board generation and A* pathfinding.",
+        "description": "Multiplayer 4X grand strategy game based on Civilization 5. Procedural board generation and A* pathfinding.",
         "links": [
             "github",
             "download"
@@ -58,7 +58,7 @@
             "featured",
             "games"
         ],
-        "description": "Browser MMORPG built with typescript, THREE.js, and socket.io.",
+        "description": "Browser MMORPG built with TypeScript, THREE.js, and socket.io.",
         "links": [
             "github",
             "web"
@@ -71,7 +71,7 @@
         "categories": [
             "game"
         ],
-        "description": "Space themed 4X grand stratergy game. Solar system generation and colonisable planets.",
+        "description": "Space themed 4X grand strategy game. Solar system generation and colonisable planets.",
         "links": [
             "github",
             "download"
@@ -95,7 +95,7 @@
         "categories": [
             "websites"
         ],
-        "description": "Microblogging website built with django, sass, and bootstrap.",
+        "description": "Microblogging website built with Django, Sass, and Bootstrap.",
         "links": [
             "github"
         ]
@@ -106,7 +106,7 @@
         "categories": [
             "websites"
         ],
-        "description": "Movie Rankings is a website that allows users show off their favourite movies and create polls about them. Built with flask, jinja and bootstrap.",
+        "description": "Movie Rankings is a website that allows users show off their favourite movies and create polls about them. Built with Flask, Jinja2 and Bootstrap.",
         "links": [
             "github",
             "web"
@@ -114,12 +114,12 @@
         "demoUrl": "https://movies.tim-ings.com/"
     },
     {
-        "name": "Oldschool Runescape World Ping",
+        "name": "Old School Runescape World Ping",
         "slug": "OSRSWorldPing",
         "categories": [
             "websites"
         ],
-        "description": "Check your ping to the oldschool runescape game servers.",
+        "description": "Check your ping to the Old School Runescape game servers.",
         "links": [
             "github",
             "web"
@@ -145,7 +145,7 @@
         "categories": [
             "programs"
         ],
-        "description": "Modular bot for the chat app discord. Includes user permissions, youtube music player, server administration, embeded messages, world of warcraft utilities, and fun hidden responses.",
+        "description": "Modular bot for the chat app Discord. Includes user permissions, YouTube music player, server administration, embedded messages, World of Warcraft utilities, and fun hidden responses.",
         "links": [
             "github"
         ]
@@ -156,7 +156,7 @@
         "categories": [
             "programs"
         ],
-        "description": "Reddit bot that responds to commenters' requests for a lower qaulity version of an image.",
+        "description": "Reddit bot that responds to commenters' requests for a lower quality version of an image.",
         "links": [
             "github"
         ]
@@ -167,7 +167,7 @@
         "categories": [
             "games"
         ],
-        "description": "Single button infinite runner game developed in unity. Press any key to make the player jump off the ground or wall he is stuck to.",
+        "description": "Single button infinite runner game developed in Unity. Press any key to make the player jump off the ground or wall he is stuck to.",
         "links": [
             "github",
             "web"
@@ -206,7 +206,7 @@
         "categories": [
             "addon"
         ],
-        "description": "Discord Rich Presence for World of Warcraft. The AddOn gathers data from the game and displays it to the python script, which updates the users discord presence.",
+        "description": "Discord Rich Presence for World of Warcraft. The AddOn gathers data from the game and displays it to the python script, which updates the users Discord presence.",
         "links": [
             "github"
         ]
@@ -230,7 +230,7 @@
         "categories": [
             "addon"
         ],
-        "description": "An extension of the popular AddOn ElvUI that causes recount to respect the interface fading feature.",
+        "description": "An extension of the popular AddOn ElvUI that causes Recount to respect the interface fading feature.",
         "links": [
             "github",
             "curse"
@@ -238,12 +238,12 @@
         "curseUrl": "https://www.curseforge.com/wow/addons/elvui_recountigf"
     },
     {
-        "name": "Simc Dungeon Jorunal",
+        "name": "Simc Dungeon Journal",
         "slug": "simcdungeonjournal",
         "categories": [
             "addon"
         ],
-        "description": "Provides a function to generate simulationcraft input based on boss loot tables found in the dungeon journal. The user can take this output and input it into simulationcraft, which is a program that tells you what gear will allow your character to do the most damage.",
+        "description": "Provides a function to generate SimulationCraft input based on boss loot tables found in the dungeon journal.",
         "links": [
             "github",
             "curse"
