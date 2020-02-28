@@ -47,6 +47,7 @@ const processProjects = (projects) => {
             header: headerImgFormatter(proj.slug),
             categories: proj.categories.join(),
             links,
+            downloads: proj.downloads
         }
     });
 }
@@ -63,10 +64,10 @@ const processCategories = (projects) => {
 }
 
 const getData = () => {
-    const projectData = JSON.parse(fs.readFileSync(projectsFile, 'utf8'));
+    const projectData = JSON.parse(fs.readFileSync(projectsFile, 'utf8')); // require caches so use fs
     return {
         data: {
-            projects: processProjects(projectData), // require caches so use fs
+            projects: processProjects(projectData),
             categories: processCategories(processProjects(projectData))
         }
     }

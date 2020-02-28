@@ -61,7 +61,7 @@
     <h2 class="category-header" id="addons">AddOns</h2>
     <div class="project-container">
         {% for proj in data.categories.addons %}
-            {{ project.new(proj, 'addons') }}
+            {{ project.new(proj, 'addons', proj.downloads, 'downloads on Curse', '#eb7d34') }}
         {% else %}
             <h1>NO PROJECT DATA</h1>
         {% endfor %}

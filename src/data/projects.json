@@ -199,7 +199,8 @@
             "github",
             "curse"
         ],
-        "curseUrl": "https://www.curseforge.com/wow/addons/elvui_bettertalentframe"
+        "curseUrl": "https://www.curseforge.com/wow/addons/elvui_bettertalentframe",
+        "downloads": 49272
     },
     {
         "name": "Wow Discord Rich Presence",
@@ -223,7 +224,8 @@
             "github",
             "curse"
         ],
-        "curseUrl": "https://www.curseforge.com/wow/addons/arwicaltmanager"
+        "curseUrl": "https://www.curseforge.com/wow/addons/arwicaltmanager",
+        "downloads": 2098
     },
     {
         "name": "ElvUI Recount Inherit Global Fade",
@@ -236,7 +238,8 @@
             "github",
             "curse"
         ],
-        "curseUrl": "https://www.curseforge.com/wow/addons/elvui_recountigf"
+        "curseUrl": "https://www.curseforge.com/wow/addons/elvui_recountigf",
+        "downloads": 34700
     },
     {
         "name": "Simc Dungeon Journal",
@@ -249,6 +252,7 @@
             "github",
             "curse"
         ],
-        "curseUrl": "https://www.curseforge.com/wow/addons/simcdj"
+        "curseUrl": "https://www.curseforge.com/wow/addons/simcdj",
+        "downloads": 2065
     }
 ]
