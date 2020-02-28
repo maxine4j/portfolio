@@ -1,6 +1,9 @@
 const fs = require('fs');
 
+const projectsFile = './src/data/projects.json';
 const githubUser = 'tim-ings';
+
+const headerImgFormatter = (slug) => `img/headers/${slug.toLowerCase()}.png`;
 
 const linkIcons = {
     github: "github",
@@ -16,11 +19,16 @@ const linkText = {
     curse: "View on Curse",
 }
 
+const errorFatal = (msg) => {
+    console.error(`\x1b[31m${msg}\x1b[0m`);
+    process.exit(1);
+}
+
 const linkHref = {
     github: (proj) => `https://github.com/${githubUser}/${proj.slug}`,
     download: (proj) => `https://github.com/${githubUser}/${proj.slug}/releases`,
-    web: (proj) => proj.demoUrl || "javascript:alert('Error: no demoUrl found')",
-    curse: (proj) => proj.curseUrl || "javascript:alert('Error: no curseUrl found')",
+    web: (proj) => proj.demoUrl || errorFatal(`ERROR: No demoUrl for ${proj.slug}`),
+    curse: (proj) => proj.curseUrl || errorFatal(`ERROR: No curseUrl for ${proj.slug}`),
 }
 
 const processProjects = (projects) => {
@@ -36,7 +44,7 @@ const processProjects = (projects) => {
             name: proj.name,
             slug: proj.slug,
             description: proj.description,
-            header: `img/headers/${proj.slug.toLowerCase()}.png`,
+            header: headerImgFormatter(proj.slug),
             categories: proj.categories.join(),
             links,
         }
@@ -55,7 +63,7 @@ const processCategories = (projects) => {
 }
 
 const getData = () => {
-    const projectData = JSON.parse(fs.readFileSync('./src/data/projects.json', 'utf8'));
+    const projectData = JSON.parse(fs.readFileSync(projectsFile, 'utf8'));
     return {
         data: {
             projects: processProjects(projectData), // require caches so use fs

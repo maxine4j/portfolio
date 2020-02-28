@@ -8,7 +8,7 @@
 {% block content %}
     <div id="log" class="log hidden"></div>
     <div class="page-title">
-        <h1 class="typewriter">tim-ings $&nbsp<input id="cmd" maxlength="128" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" /></h1>
+        <h1 class="typewriter">tim-ings $&nbsp;<input id="cmd" type="text" maxlength="128" autocomplete="off" autocapitalize="off" spellcheck="false" /></h1>
         <div class="links">
             <a href="github.com/tim-ings">github</a>
             <a href="mailto:tim@tim-ings.com">tim@tim-ings.com</a>
@@ -21,7 +21,7 @@
     <h2 class="category-header" id="featured">Featured</h2>
     <div class="project-container">
         {% for proj in data.categories.featured %}
-            {{ project.new(proj) }}
+            {{ project.new(proj, 'featured') }}
         {% else %}
             <h1>NO PROJECT DATA</h1>
         {% endfor %}
@@ -31,7 +31,7 @@
     <h2 class="category-header" id="websites">Websites</h2>
     <div class="project-container">
         {% for proj in data.categories.websites %}
-            {{ project.new(proj) }}
+            {{ project.new(proj, 'websites') }}
         {% else %}
             <h1>NO PROJECT DATA</h1>
         {% endfor %}
@@ -41,7 +41,7 @@
     <h2 class="category-header" id="games">Games</h2>
     <div class="project-container">
         {% for proj in data.categories.games %}
-            {{ project.new(proj) }}
+            {{ project.new(proj, 'games') }}
         {% else %}
             <h1>NO PROJECT DATA</h1>
         {% endfor %}
@@ -51,7 +51,7 @@
     <h2 class="category-header" id="programs">Programs</h2>
     <div class="project-container">
         {% for proj in data.categories.programs %}
-            {{ project.new(proj) }}
+            {{ project.new(proj, 'programs') }}
         {% else %}
             <h1>NO PROJECT DATA</h1>
         {% endfor %}
@@ -61,7 +61,7 @@
     <h2 class="category-header" id="addons">AddOns</h2>
     <div class="project-container">
         {% for proj in data.categories.addons %}
-            {{ project.new(proj) }}
+            {{ project.new(proj, 'addons') }}
         {% else %}
             <h1>NO PROJECT DATA</h1>
         {% endfor %}
@@ -70,5 +70,5 @@
 {% endblock %}
 
 {% block scripts %}
-<script type="text/javascript" src="./commandBox.js"></script>
+<script src="./commandBox.js"></script>
 {% endblock %}

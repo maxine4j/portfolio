@@ -1,8 +1,8 @@
 {% import "macros/_button.njk" as button %}
 
-{% macro new(project) %}
-<div class="project" id="proj-{{ project.slug }}" data-categories="{{ project.categories }}">
-    <img class="background" draggable="false" src="{{ project.header }}">
+{% macro new(project, category) %}
+<div class="project" id="proj-{{ project.slug }}-{{ category }}" data-categories="{{ project.categories }}">
+    <img class="background" alt="header for {{ project.name }}" draggable="false" src="{{ project.header }}">
     <div class="content">
         <div class="title">
             <h2><span>{{ project.name }}</span></h2>
