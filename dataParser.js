@@ -25,7 +25,7 @@ const errorFatal = (msg) => {
 }
 
 const linkHref = {
-    github: (proj) => `https://github.com/${githubUser}/${proj.slug}`,
+    github: (proj) => `https://github.com/${proj.githubUser || githubUser}/${proj.slug}`,
     download: (proj) => `https://github.com/${githubUser}/${proj.slug}/releases`,
     web: (proj) => proj.demoUrl || errorFatal(`ERROR: No demoUrl for ${proj.slug}`),
     curse: (proj) => proj.curseUrl || errorFatal(`ERROR: No curseUrl for ${proj.slug}`),

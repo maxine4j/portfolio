@@ -64,7 +64,7 @@
     {
         "name": "// TODO:",
         "slug": "todo",
-        "description": "Simple todo list application built with React, Redux, and Firebase",
+        "description": "Simple todo list application built with React, Redux, and Firebase.",
         "categories": [
             "featured",
             "websites"
@@ -82,6 +82,23 @@
             "web"
         ],
         "demoUrl": "https://todo.tim-ings.com"
+    },
+    {
+        "name": "CITS Bot",
+        "slug": "citsbot",
+        "githubUser": "uwacsds",
+        "description": "Discord bot for the UWA Computer & Data Science discord. Weekly announcement of upcoming deadlines and role reacts.",
+        "categories": [
+            "featured",
+            "program"
+        ],
+        "tech": [
+            "Python",
+            "Discord"
+        ],
+        "links": [
+            "github"
+        ]
     },
     {
         "name": "Dominion",
