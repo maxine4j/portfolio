@@ -48,7 +48,8 @@ const processProjects = (projects) => {
             categories: proj.categories.join(),
             links,
             tech: proj.tech,
-            downloads: proj.downloads
+            downloads: proj.downloads,
+            iframe: proj.iframe,
         }
     });
 }

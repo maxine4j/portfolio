@@ -2,11 +2,23 @@
 
 {% macro new(project, category, count, countWord, countColour) %}
 <div class="project" id="proj-{{ project.slug }}-{{ category }}" data-categories="{{ project.categories }}">
-    <img class="background" alt="header for {{ project.name }}" draggable="false" src="{{ project.header }}">
-    <div class="content">
-        <div class="title">
-            <h2><span>{{ project.name }}</span></h2>
+    {% if project.header %}
+        <img class="background" alt="header for {{ project.name }}" draggable="false" src="{{ project.header }}">
+    {% endif %}
+    {% if project.iframe %}
+        <iframe class="project-iframe" src="{{ project.iframe }}"></iframe>
+        <div class="iframe-hover-trigger content-trigger button">
+            <span class="ico ico-info"></span>
         </div>
+    <div class="content">
+    {% else %}
+    <div class="content content-trigger">
+    {% endif %}
+        {% if project.name %}
+            <div class="title">
+                <h2><span>{{ project.name }}</span></h2>
+            </div>
+        {% endif %}
         <div class="description">
             {% if count %}
                 <p style="color: {{ countColour }}">{{ count.toLocaleString() }}+ {{ countWord }}</p>
