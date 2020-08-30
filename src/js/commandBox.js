@@ -1,5 +1,7 @@
 const supportsTouch = () => 'ontouchstart' in document.documentElement;
 
+let ALLOW_DEMO_TYPE = false;
+
 const config = {
     github: 'https://github.com/tim-ings',
     email: 'tim@tim-ings.com',
@@ -113,7 +115,7 @@ if (supportsTouch()) { // disable on mobile
         cout(`$ ${inp}`);
         for (const args of cmds) {
             if (args[0] in commands) commands[args[0]].run(args); // run the command 
-            else { cout(`tish: ${args[0]}: command not found\n\n`); commands.help.run(); break; }
+            else { cout(`tsh: ${args[0]}: command not found\n\n`); commands.help.run(); break; }
         }
         cout('\n');
     }
@@ -132,6 +134,12 @@ if (supportsTouch()) { // disable on mobile
 
         cmdBox.focus(); // focus the cmd box on any typing
 
+        // clear the text box if we were demo typing
+        if (ALLOW_DEMO_TYPE) {
+            cmdBox.value = '';
+        }
+        ALLOW_DEMO_TYPE = false; // stop all future demo type callbacks from doing anything
+
         if (ev.key === "Enter") { // run the command and clear the box
             runCmd(cmdBox.value);
             cmdBox.value = "";
@@ -141,17 +149,22 @@ if (supportsTouch()) { // disable on mobile
     });
 
     const demoType = (text, speed=50, erase=true, eraseSpeed=20, eraseGap=1000) => {
+        ALLOW_DEMO_TYPE = true;
         return new Promise(resolve => {
             for (let i = 0; i < text.length; i++) {
                 setTimeout(() => {
-                    cmdBox.value += text[i];
-                    updateWidth();
+                    if (ALLOW_DEMO_TYPE) {
+                        cmdBox.value += text[i];
+                        updateWidth();
+                    }
                 }, speed * i);
                 if (erase) {
                     setTimeout(() => {
-                        cmdBox.value = cmdBox.value.slice(0, cmdBox.value.length - 1);
-                        updateWidth();
-                        if (i >= text.length - 1) resolve();
+                        if (ALLOW_DEMO_TYPE) {
+                            cmdBox.value = cmdBox.value.slice(0, cmdBox.value.length - 1);
+                            updateWidth();
+                            if (i >= text.length - 1) resolve();
+                        }
                     }, eraseSpeed * i + (text.length * speed) + eraseGap);
                 }
             }
@@ -159,13 +172,13 @@ if (supportsTouch()) { // disable on mobile
     }
 
     window.addEventListener('load', ev => {
-        setTimeout(() => {
-            demoType('hello world')
-            .then(() => demoType('try typing a command'))
-            .then(() => demoType('goto games', 30, true, 15, 300))
-            .then(() => demoType('github', 30, true, 15, 300))
-            .then(() => demoType('js demoType("hello")', 15, true, 10, 300))
-            .then(() => demoType('help', 30, true, 15, 1000))
+        setTimeout(async () => {
+            await demoType('hello world');
+            await demoType('try typing a command');
+            await demoType('goto games', 30, true, 15, 300);
+            await demoType('github', 30, true, 15, 300);
+            await demoType('js demoType("hello")', 15, true, 10, 300);
+            await demoType('help', 30, true, 15, 1000);
         }, 1000);
     });
 }
