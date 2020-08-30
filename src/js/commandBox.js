@@ -122,6 +122,7 @@ if (supportsTouch()) { // disable on mobile
         if (ev.key === 'ArrowUp' 
             || ev.key === 'ArrowDown' 
             || ev.key === ' '
+            || ev.key === 'Tab'
             || ev.key === 'Control'
             || ev.key === 'Shift'
             || ev.key === 'Alt'
