@@ -6,7 +6,7 @@
         <img class="background" alt="header for {{ project.name }}" draggable="false" src="{{ project.header }}">
     {% endif %}
     {% if project.iframe %}
-        <iframe class="project-iframe" src="{{ project.iframe }}"></iframe>
+        <iframe title="{{ project.name }} embedded demo" class="project-iframe" src="{{ project.iframe }}"></iframe>
         <div class="iframe-hover-trigger content-trigger button">
             <span class="ico ico-info"></span>
         </div>

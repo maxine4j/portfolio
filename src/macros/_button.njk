@@ -1,5 +1,5 @@
 {% macro new(text, icon, href) %}
-<a class="button" target="_blank" rel="noopener rereferrer" href="{{ href }}">
+<a class="button" target="_blank" rel="noopener rereferrer" href="{{ href }}" aria-label="{{ text }} (opens in a new tab)">
     <span class="ico ico-{{ icon }}"></span>
     {{ text }}
 </a>
