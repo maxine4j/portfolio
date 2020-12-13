@@ -1,0 +1,17 @@
+name: Deploy
+
+on:
+  push:
+    tags:
+      - "*"
+
+jobs:
+  deploy-infra:
+    timeout-minutes: 15
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout git repository
+        uses: actions/checkout@v2
+
+      - name: Deploy to github pages
+        run: yarn deploy
