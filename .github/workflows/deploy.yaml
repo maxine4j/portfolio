@@ -13,5 +13,8 @@ jobs:
       - name: Checkout git repository
         uses: actions/checkout@v2
 
+      - name: Install dependencies
+        run: yarn
+
       - name: Deploy to github pages
         run: yarn deploy
