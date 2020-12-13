@@ -41,7 +41,7 @@
     },
     {
         "name": "Bastion Droptimizer",
-        "slug": "DroptimizerServer",
+        "slug": "droptimizer-server",
         "description": "Aggregates the results of raidbots.com SimulationCraft reports for an entire raid team enabling leadership to make better decisions about how to distribute loot.",
         "categories": [
             "featured",
@@ -164,7 +164,7 @@
     },
     {
         "name": "Infinite Frontier",
-        "slug": "infinitefrontier",
+        "slug": "infinite-frontier",
         "description": "Space themed 4X grand strategy game. Solar system generation and colonisable planets.",
         "categories": [
             "game"
@@ -219,7 +219,7 @@
     },
     {
         "name": "Movie Rankings",
-        "slug": "MovieRankings",
+        "slug": "movie-rankings",
         "description": "Movie Rankings is a website that allows users show off their favourite movies and create polls about them. Built with Flask, Jinja2 and Bootstrap.",
         "categories": [
             "websites"
@@ -240,7 +240,7 @@
     },
     {
         "name": "Old School RuneScape World Ping",
-        "slug": "OSRSWorldPing",
+        "slug": "osrs-world-ping",
         "description": "Check your ping to the Old School RuneScape game servers.",
         "categories": [
             "websites"
@@ -260,7 +260,7 @@
     },
     {
         "name": "Attendance Report",
-        "slug": "AttendanceReport",
+        "slug": "attendance-report",
         "description": "Generate a report showing how often players are late, leave early, or fail to attend World of Warcraft raids based on their presence in combat log data retrieved from warcraftlogs.com.",
         "categories": [
             "websites"
@@ -280,7 +280,7 @@
     },
     {
         "name": "Arwic Bot",
-        "slug": "ArwicBot",
+        "slug": "arwic-bot",
         "description": "Modular bot for the chat app Discord. Includes user permissions, YouTube music player, server administration, embedded messages, World of Warcraft utilities, and fun hidden responses.",
         "categories": [
             "programs"
@@ -295,7 +295,7 @@
     },
     {
         "name": "Needs More JPEG Bot",
-        "slug": "NeedsMoreJPEGBot",
+        "slug": "needs-more-jpeg-bot",
         "description": "Reddit bot that responds to commenters' requests for a lower quality version of an image.",
         "categories": [
             "programs"
@@ -363,7 +363,7 @@
     },
     {
         "name": "Wow Discord Rich Presence",
-        "slug": "WowDiscordRichPresence",
+        "slug": "wow-drp",
         "description": "Discord Rich Presence for World of Warcraft. The AddOn gathers data from the game and displays it to the python script, which updates the users Discord presence.",
         "categories": [
             "addon"
