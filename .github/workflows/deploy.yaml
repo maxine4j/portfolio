@@ -16,7 +16,7 @@ jobs:
       - name: Deploy to github pages
         run: |
           echo "${{ secrets.DEPLOY_KEY }}" > ~/.ssh/id_rsa
-          git remote set-url origin git@github.com:${{ GITHUB_REPOSITORY }}.git
+          git remote set-url origin git@github.com:${{ secrets.GITHUB_REPOSITORY }}.git
           git config --global user.name "Tim Ings"
           git config --global user.email "tim@tim-ings.com"
           yarn
