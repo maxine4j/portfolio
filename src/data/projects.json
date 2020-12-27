@@ -4,7 +4,6 @@
         "slug": "jnsgardening",
         "description": "React/Express based website developed for local gardening business. Includes booking system and administrator back end.",
         "categories": [
-            "featured",
             "websites"
         ],
         "tech": [
@@ -14,10 +13,7 @@
             "CSS",
             "JavaScript"
         ],
-        "links": [
-            "web"
-        ],
-        "demoUrl": "https://jnsgardening.com/"
+        "links": []
     },
     {
         "name": "UWA Pharmacy Case",
@@ -41,7 +37,7 @@
     },
     {
         "name": "Bastion Droptimizer",
-        "slug": "droptimizer-server",
+        "slug": "droptimizer",
         "description": "Aggregates the results of raidbots.com SimulationCraft reports for an entire raid team enabling leadership to make better decisions about how to distribute loot.",
         "categories": [
             "featured",
@@ -66,7 +62,6 @@
         "slug": "todo",
         "description": "Simple todo list application built with React, Redux, and Firebase.",
         "categories": [
-            "featured",
             "websites"
         ],
         "tech": [
@@ -145,7 +140,6 @@
         "slug": "surl",
         "description": "Link shortener built with firebase cloud functions and firestore. Embedded demo.",
         "categories": [
-            "featured",
             "websites"
         ],
         "tech": [
@@ -156,11 +150,8 @@
             "Nodejs"
         ],
         "links": [
-            "github",
-            "web"
-        ],
-        "iframe": "https://surl.tim-ings.com/?iframe=true",
-        "demoUrl": "https://surl.tim-ings.com"
+            "github"
+        ]
     },
     {
         "name": "Infinite Frontier",
@@ -323,7 +314,7 @@
             "github",
             "web"
         ],
-        "demoUrl": "https://tim-ings.github.io/Run/"
+        "demoUrl": "https://tim-ings.github.io/run/"
     },
     {
         "name": "Pong",
@@ -341,7 +332,7 @@
             "github",
             "web"
         ],
-        "demoUrl": "https://tim-ings.github.io/Pong/"
+        "demoUrl": "https://tim-ings.github.io/pong/"
     },
     {
         "name": "ElvUI Better Talent Frame",
@@ -359,7 +350,7 @@
             "curse"
         ],
         "curseUrl": "https://www.curseforge.com/wow/addons/elvui_bettertalentframe",
-        "downloads": 51505
+        "downloads": 61034
     },
     {
         "name": "Wow Discord Rich Presence",
@@ -394,7 +385,7 @@
             "curse"
         ],
         "curseUrl": "https://www.curseforge.com/wow/addons/arwicaltmanager",
-        "downloads": 2125
+        "downloads": 2175
     },
     {
         "name": "ElvUI Recount Inherit Global Fade",
@@ -412,7 +403,7 @@
             "curse"
         ],
         "curseUrl": "https://www.curseforge.com/wow/addons/elvui_recountigf",
-        "downloads": 35171
+        "downloads": 37559
     },
     {
         "name": "Simc Dungeon Journal",
@@ -430,6 +421,6 @@
             "curse"
         ],
         "curseUrl": "https://www.curseforge.com/wow/addons/simcdj",
-        "downloads": 2371
+        "downloads": 3614
     }
 ]
