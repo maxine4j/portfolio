@@ -1,7 +1,7 @@
 FROM node:14.15.3-buster as builder
 WORKDIR /app
 COPY package.json yarn.lock ./
-RUN yarn install --pure-lockfile --network-timeout 600000
+RUN yarn install --frozen-lockfile --network-timeout 600000
 COPY ./dataParser.js ./
 COPY ./gulpfile.js ./
 COPY src/ ./src/
