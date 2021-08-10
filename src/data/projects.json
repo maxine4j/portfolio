@@ -73,10 +73,8 @@
             "Sass"
         ],
         "links": [
-            "github",
-            "web"
-        ],
-        "demoUrl": "https://todo.tim-ings.com"
+            "github"
+        ]
     },
     {
         "name": "CITS Bot",
@@ -88,7 +86,7 @@
             "program"
         ],
         "tech": [
-            "Python",
+            "TypeScript",
             "Discord"
         ],
         "links": [
@@ -350,7 +348,7 @@
             "curse"
         ],
         "curseUrl": "https://www.curseforge.com/wow/addons/elvui_bettertalentframe",
-        "downloads": 61034
+        "downloads": 71229
     },
     {
         "name": "Wow Discord Rich Presence",
@@ -385,7 +383,7 @@
             "curse"
         ],
         "curseUrl": "https://www.curseforge.com/wow/addons/arwicaltmanager",
-        "downloads": 2175
+        "downloads": 2787
     },
     {
         "name": "ElvUI Recount Inherit Global Fade",
@@ -403,7 +401,7 @@
             "curse"
         ],
         "curseUrl": "https://www.curseforge.com/wow/addons/elvui_recountigf",
-        "downloads": 37559
+        "downloads": 39834
     },
     {
         "name": "Simc Dungeon Journal",
@@ -421,6 +419,6 @@
             "curse"
         ],
         "curseUrl": "https://www.curseforge.com/wow/addons/simcdj",
-        "downloads": 3614
+        "downloads": 4721
     }
 ]
