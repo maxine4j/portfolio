@@ -12,15 +12,15 @@
         <div class="links">
             <a href="https://github.com/tim-ings">github</a>
             <a href="https://www.linkedin.com/in/tim-ings">linkedin</a>
-            <a id="link-email" href="mailto:tim@tim-ings.com">tim@tim-ings.com</a>
-            <a id="link-phone" href="tel:0406840009">0406 840 009</a>
+            <button id="link-email"></button>
+            <button id="link-phone"></button>
             <a href="./content/tim-ings-resume.pdf">resume.pdf</a>
             <a href="./content/tim-ings-resume.docx">resume.docx</a>
         </div>
         <script>
             if (window.location.search.indexOf('masked=true') !== -1) {
-                document.getElementById('link-email').textContent = 't**@t*******.com';
-                document.getElementById('link-phone').textContent = '0000 000 000';
+                document.getElementById('link-email').classList.add('masked');
+                document.getElementById('link-phone').classList.add('masked');
             }
         </script>
     </div>

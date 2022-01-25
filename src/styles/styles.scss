@@ -34,7 +34,7 @@ body {
         justify-content: flex-start;
         flex-wrap: wrap;
 
-        a {
+        a, button {
             margin: 10px;
             padding: 5px;
             text-align: center;
@@ -54,6 +54,31 @@ body {
                 color: $col-text;
                 border-color: $col-text;
             }
+        }
+
+        button {
+            cursor: pointer;
+            background-size: cover;
+            background-position: center;
+            background: inherit;
+            font-size: inherit;
+            font-family: inherit;
+        }
+
+        #link-email::after {
+            content: "tim@tim-ings.com";
+        }
+
+        #link-email.masked::after {
+            content: "t**@t*******.com";
+        }
+        
+        #link-phone::after {
+            content: "0406 840 009";
+        }
+
+        #link-phone.masked::after {
+            content: "0000 000 000";
         }
     }
 }
