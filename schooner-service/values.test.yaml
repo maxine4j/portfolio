@@ -8,6 +8,6 @@ resources:
         tag: 1.8.0
         ingress:
           public:
-            hostname: tim-ings.com
+            hostname: test.tim-ings.com
             pathPrefix: /
           containerPort: 3000
