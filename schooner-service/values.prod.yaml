@@ -5,7 +5,7 @@ resources:
     containers:
       - name: portfolio
         image: ghcr.io/tim-ings/portfolio
-        tag: 1.7.0
+        tag: 1.7.1
         ingress:
           public:
             hostname: tim-ings.com
