@@ -1,0 +1,13 @@
+resources:
+  - name: static
+    type: server
+    replicas: 1
+    containers:
+      - name: portfolio
+        image: ghcr.io/tim-ings/portfolio
+        tag: 1.6.0
+        ingress:
+          public:
+            hostname: tim-ings.com
+            pathPrefix: /
+          containerPort: 3000
