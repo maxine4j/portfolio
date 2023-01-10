@@ -111,6 +111,12 @@ gulp.task(
         .pipe(gulp.dest('./dist/content/'))
 );
 
-gulp.task('build', gulp.parallel('copy-content', 'copy-favicon', 'sass', 'compressImage', 'compressJs', 'nunjucks'));
+gulp.task(
+    'copy-cname', 
+    () => gulp.src('./CNAME')
+        .pipe(gulp.dest('./dist/CNAME'))
+);
+
+gulp.task('build', gulp.parallel('copy-cname', 'copy-content', 'copy-favicon', 'sass', 'compressImage', 'compressJs', 'nunjucks'));
 
 gulp.task('default', gulp.series('build', 'serve'));
