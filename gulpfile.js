@@ -114,7 +114,7 @@ gulp.task(
 gulp.task(
     'copy-cname', 
     () => gulp.src('./CNAME')
-        .pipe(gulp.dest('./dist/CNAME'))
+        .pipe(gulp.dest('./dist/'))
 );
 
 gulp.task('build', gulp.parallel('copy-cname', 'copy-content', 'copy-favicon', 'sass', 'compressImage', 'compressJs', 'nunjucks'));
