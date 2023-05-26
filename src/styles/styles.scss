@@ -72,14 +72,6 @@ body {
         #link-email.masked::after {
             content: "t**@t*******.com";
         }
-        
-        #link-phone::after {
-            content: "0406 840 009";
-        }
-
-        #link-phone.masked::after {
-            content: "0000 000 000";
-        }
     }
 }
 
