@@ -3,9 +3,7 @@ const supportsTouch = () => 'ontouchstart' in document.documentElement;
 let ALLOW_DEMO_TYPE = false;
 
 const config = {
-    github: 'https://github.com/tim-ings',
-    email: 'tim@tim-ings.com',
-    resume: 'tim-ings-resume',
+    github: 'https://github.com/maxine4j'
 }
 
 const cmdBox = document.getElementById('cmd');
@@ -62,32 +60,9 @@ if (supportsTouch()) { // disable on mobile
             },
             man: "Displays the manual page for the given command",
         },
-        goto: {
-            run: args => {
-                const valids = ['featured', 'websites', 'games', 'programs', 'addons'];
-                if (args[1] && valids.indexOf(args[1]) >= 0) location.replace(`#${args[1]}`);
-                else {
-                    cout(`Unknown category: ${args[1] || '\"\"'}`);
-                    cout(`Available categories:\n    - ${valids.join('\n    - ')}`);
-                }
-            },
-            man: "Scrolls to the given project category",
-        },
         github: {
             run: args => lnout(config.github, config.github, true),
             man: "Opens my GitHub profile",
-        },
-        resume: {
-            run: args => {
-                const valids = { pdf: 'pdf', doc: 'docx', world: 'docx', word: 'docx', office: 'docx' };
-                const file = `tim-ings-resume.${valids[args[1]] || 'pdf'}`;
-                lnout(file, `./content/${file}`, true);
-            },
-            man: "Download my résumé. Provide argument `docx` for microsoft office format.",
-        },
-        mail: {
-            run: args => lnout(config.email, `mailto:${config.email}`, true),
-            man: "Send me an email",
         },
         reload: {
             run: args => location.reload(),
@@ -175,7 +150,6 @@ if (supportsTouch()) { // disable on mobile
         setTimeout(async () => {
             await demoType('hello world');
             await demoType('try typing a command');
-            await demoType('goto games', 30, true, 15, 300);
             await demoType('github', 30, true, 15, 300);
             await demoType('js demoType("hello")', 15, true, 10, 300);
             await demoType('help', 30, true, 15, 1000);

@@ -2,26 +2,18 @@
 {% import "macros/_project.njk" as project %}
 
 {% block head %}
-<title>Tim Ings</title>
+<title>maxine4j</title>
 {% endblock %}
 
 {% block content %}
     <div id="log" class="log hidden"></div>
     <div class="page-title">
-        <h1 class="typewriter">tim-ings $&nbsp;<input id="cmd" type="text" maxlength="128" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="Command box" /></h1>
-        <div class="links">
-            <a href="https://github.com/tim-ings">github</a>
-            <a href="https://www.linkedin.com/in/tim-ings">linkedin</a>
-            <button id="link-email"></button>
-            <a href="./content/tim-ings-resume.pdf">resume.pdf</a>
-            <a href="./content/tim-ings-resume.docx">resume.docx</a>
-        </div>
-        <script>
-            if (window.location.search.indexOf('masked=true') !== -1) {
-                document.getElementById('link-email').classList.add('masked');
-            }
-        </script>
+        <h1 class="typewriter">maxine4j $&nbsp;<input id="cmd" type="text" maxlength="128" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="Command box" /></h1>
     </div>
+    <br />
+    <br />
+    <br />
+    <br />
 
     <h2 class="category-header" id="featured">Featured</h2>
     <div class="project-container">
@@ -33,40 +25,10 @@
     </div>
     <hr />
 
-    <h2 class="category-header" id="websites">Websites</h2>
+    <h2 class="category-header" id="projects">Projects</h2>
     <div class="project-container">
-        {% for proj in data.categories.websites %}
-            {{ project.new(proj, 'websites') }}
-        {% else %}
-            <h1>NO PROJECT DATA</h1>
-        {% endfor %}
-    </div>
-    <hr />
-
-    <h2 class="category-header" id="games">Games</h2>
-    <div class="project-container">
-        {% for proj in data.categories.games %}
-            {{ project.new(proj, 'games') }}
-        {% else %}
-            <h1>NO PROJECT DATA</h1>
-        {% endfor %}
-    </div>
-    <hr />
-
-    <h2 class="category-header" id="programs">Programs</h2>
-    <div class="project-container">
-        {% for proj in data.categories.programs %}
-            {{ project.new(proj, 'programs') }}
-        {% else %}
-            <h1>NO PROJECT DATA</h1>
-        {% endfor %}
-    </div>
-    <hr />
-
-    <h2 class="category-header" id="addons">AddOns</h2>
-    <div class="project-container">
-        {% for proj in data.categories.addons %}
-            {{ project.new(proj, 'addons', proj.downloads, 'downloads on Curse', '#eb7d34') }}
+        {% for proj in data.categories.remaining %}
+            {{ project.new(proj, 'projects') }}
         {% else %}
             <h1>NO PROJECT DATA</h1>
         {% endfor %}

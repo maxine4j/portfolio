@@ -5,15 +5,7 @@
     {% if project.header %}
         <img class="background" alt="header for {{ project.name }}" draggable="false" src="{{ project.header }}">
     {% endif %}
-    {% if project.iframe %}
-        <iframe title="{{ project.name }} embedded demo" class="project-iframe" src="{{ project.iframe }}"></iframe>
-        <div class="iframe-hover-trigger content-trigger button button-empty">
-            <span class="ico ico-info"></span>
-        </div>
-    <div class="content">
-    {% else %}
     <div class="content content-trigger">
-    {% endif %}
         {% if project.name %}
             <div class="title">
                 <h2><span>{{ project.name }}</span></h2>

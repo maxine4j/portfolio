@@ -1,38 +1,38 @@
 [
     {
-        "name": "JNS Gardening Solutions",
-        "slug": "jnsgardening",
-        "description": "React/Express based website developed for local gardening business. Includes booking system and administrator back end.",
+        "name": "MMO",
+        "slug": "mmo",
+        "description": "Browser MMORPG built with TypeScript, THREE.js, and socket.io.",
         "categories": [
-            "websites"
+            "featured"
         ],
         "tech": [
-            "React",
+            "TypeScript",
+            "threejs",
+            "OpenGL",
             "Nodejs",
             "HTML5",
-            "CSS",
-            "JavaScript"
-        ],
-        "links": []
-    },
-    {
-        "name": "UWA Pharmacy Case",
-        "slug": "case",
-        "description": "Web application developed by a team of UWA students for Dr. Kenneth Lee and the UWA Master of Pharmacy course. Allows students to create, practice, share, and comment on real life case studies.",
-        "categories": [
-            "featured",
-            "websites"
-        ],
-        "tech": [
-            "Django",
-            "Python",
-            "HTML5",
-            "Sass",
-            "Bootstrap",
-            "JavaScript"
+            "Sass"
         ],
         "links": [
             "github"
+        ]
+    },
+    {
+        "name": "Dominion",
+        "slug": "dominion",
+        "description": "Multiplayer 4X grand strategy game based on Civilization 5. Procedural board generation and A* pathfinding.",
+        "categories": [
+            "featured"
+        ],
+        "tech": [
+            "CSharp",
+            "MonoGame",
+            "XNA"
+        ],
+        "links": [
+            "github",
+            "download"
         ]
     },
     {
@@ -40,8 +40,7 @@
         "slug": "droptimizer",
         "description": "Aggregates the results of raidbots.com SimulationCraft reports for an entire raid team enabling leadership to make better decisions about how to distribute loot.",
         "categories": [
-            "featured",
-            "websites"
+            "featured"
         ],
         "tech": [
             "React",
@@ -50,27 +49,6 @@
             "CSS",
             "JavaScript",
             "WoW"
-        ],
-        "links": [
-            "github",
-            "web"
-        ],
-        "demoUrl": "https://droptimizer.tim-ings.com/"
-    },
-    {
-        "name": "// TODO:",
-        "slug": "todo",
-        "description": "Simple todo list application built with React, Redux, and Firebase.",
-        "categories": [
-            "websites"
-        ],
-        "tech": [
-            "JavaScript",
-            "React",
-            "Firebase",
-            "Redux",
-            "HTML5",
-            "Sass"
         ],
         "links": [
             "github"
@@ -82,70 +60,11 @@
         "githubUser": "uwacsds",
         "description": "Discord bot for the UWA Computer & Data Science discord. Weekly announcement of upcoming deadlines and role reacts.",
         "categories": [
-            "featured",
-            "program"
+            "featured"
         ],
         "tech": [
             "TypeScript",
             "Discord"
-        ],
-        "links": [
-            "github"
-        ]
-    },
-    {
-        "name": "Dominion",
-        "slug": "dominion",
-        "description": "Multiplayer 4X grand strategy game based on Civilization 5. Procedural board generation and A* pathfinding.",
-        "categories": [
-            "featured",
-            "game"
-        ],
-        "tech": [
-            "CSharp",
-            "MonoGame",
-            "XNA"
-        ],
-        "links": [
-            "github",
-            "download"
-        ]
-    },
-    {
-        "name": "MMO",
-        "slug": "mmo",
-        "description": "Browser MMORPG built with TypeScript, THREE.js, and socket.io.",
-        "categories": [
-            "featured",
-            "games"
-        ],
-        "tech": [
-            "TypeScript",
-            "threejs",
-            "OpenGL",
-            "Nodejs",
-            "HTML5",
-            "Sass"
-        ],
-        "links": [
-            "github",
-            "web"
-        ],
-        "demoUrl": "https://mmo.tim-ings.com"
-    },
-    {
-        "name": "sURL - URL Shortener",
-        "slug": "surl",
-        "description": "Link shortener built with firebase cloud functions and firestore.",
-        "categories": [
-            "websites"
-        ],
-        "tech": [
-            "JavaScript",
-            "Firebase",
-            "HTML5",
-            "CSS",
-            "Nodejs"
         ],
         "links": [
             "github"
@@ -155,9 +74,7 @@
         "name": "Infinite Frontier",
         "slug": "infinite-frontier",
         "description": "Space themed 4X grand strategy game. Solar system generation and colonisable planets.",
-        "categories": [
-            "game"
-        ],
+        "categories": [],
         "tech": [
             "CSharp",
             "MonoGame",
@@ -169,176 +86,25 @@
         ]
     },
     {
-        "name": "Portfolio Site",
-        "slug": "portfolio",
-        "description": "Static portfolio site built with Nunjucks. Try out the terminal right now by typing `help` and pressing enter!",
-        "categories": [
-            "websites"
-        ],
+        "name": "Wow Discord Rich Presence",
+        "slug": "wow-drp",
+        "description": "Discord Rich Presence for World of Warcraft. The AddOn gathers data from the game and displays it to the python script, which updates the users Discord presence.",
+        "categories": [],
         "tech": [
-            "Nunjucks",
-            "HTML5",
-            "Sass",
-            "JavaScript"
-        ],
-        "links": [
-            "github",
-            "web"
-        ],
-        "demoUrl": "https://tim-ings.com/"
-    },
-    {
-        "name": "Gabr",
-        "slug": "gabr",
-        "description": "Microblogging website built with Django, Sass, and Bootstrap.",
-        "categories": [
-            "websites"
-        ],
-        "tech": [
-            "Django",
             "Python",
-            "HTML5",
-            "Sass",
-            "Bootstrap",
-            "JavaScript"
-        ],
-        "links": [
-            "github"
-        ]
-    },
-    {
-        "name": "Movie Rankings",
-        "slug": "movie-rankings",
-        "description": "Movie Rankings is a website that allows users show off their favourite movies and create polls about them. Built with Flask, Jinja2 and Bootstrap.",
-        "categories": [
-            "websites"
-        ],
-        "tech": [
-            "Flask",
-            "Python",
-            "HTML5",
-            "CSS",
-            "Bootstrap",
-            "JavaScript"
-        ],
-        "links": [
-            "github",
-            "web"
-        ],
-        "demoUrl": "https://movies.tim-ings.com/"
-    },
-    {
-        "name": "Old School RuneScape World Ping",
-        "slug": "osrs-world-ping",
-        "description": "Check your ping to the Old School RuneScape game servers.",
-        "categories": [
-            "websites"
-        ],
-        "tech": [
-            "HTML5",
-            "CSS",
-            "Bootstrap",
-            "JavaScript",
-            "RuneScape"
-        ],
-        "links": [
-            "github",
-            "web"
-        ],
-        "demoUrl": "https://osrsping.tim-ings.com/"
-    },
-    {
-        "name": "Attendance Report",
-        "slug": "attendance-report",
-        "description": "Generate a report showing how often players are late, leave early, or fail to attend World of Warcraft raids based on their presence in combat log data retrieved from warcraftlogs.com.",
-        "categories": [
-            "websites"
-        ],
-        "tech": [
-            "HTML5",
-            "CSS",
-            "Bootstrap",
-            "JavaScript",
+            "Discord",
+            "Lua",
             "WoW"
         ],
         "links": [
-            "github",
-            "web"
-        ],
-        "demoUrl": "https://attendance.tim-ings.com/"
-    },
-    {
-        "name": "Arwic Bot",
-        "slug": "arwic-bot",
-        "description": "Modular bot for the chat app Discord. Includes user permissions, YouTube music player, server administration, embedded messages, World of Warcraft utilities, and fun hidden responses.",
-        "categories": [
-            "programs"
-        ],
-        "tech": [
-            "Python",
-            "Discord"
-        ],
-        "links": [
             "github"
         ]
-    },
-    {
-        "name": "Needs More JPEG Bot",
-        "slug": "needs-more-jpeg-bot",
-        "description": "Reddit bot that responds to commenters' requests for a lower quality version of an image.",
-        "categories": [
-            "programs"
-        ],
-        "tech": [
-            "Python",
-            "Reddit"
-        ],
-        "links": [
-            "github"
-        ]
-    },
-    {
-        "name": "Run",
-        "slug": "run",
-        "description": "Single button infinite runner game developed in Unity. Press any key to make the player jump off the ground or wall he is stuck to.",
-        "categories": [
-            "games"
-        ],
-        "tech": [
-            "Unity",
-            "CSharp"
-        ],
-        "links": [
-            "github",
-            "web"
-        ],
-        "demoUrl": "https://tim-ings.github.io/Run/"
-    },
-    {
-        "name": "Pong",
-        "slug": "pong",
-        "description": "Pong implemented with HTML5 canvas.",
-        "categories": [
-            "games"
-        ],
-        "tech": [
-            "HTML5",
-            "CSS",
-            "JavaScript"
-        ],
-        "links": [
-            "github",
-            "web"
-        ],
-        "demoUrl": "https://tim-ings.github.io/pong/"
     },
     {
         "name": "ElvUI Better Talent Frame",
         "slug": "ElvUI_BetterTalentFrame",
         "description": "Improves the talent frame by adding customisable profiles and reimplementing the ability to view your selected talents from non-active specs.",
-        "categories": [
-            "addon"
-        ],
+        "categories": [],
         "tech": [
             "Lua",
             "WoW"
@@ -351,29 +117,10 @@
         "downloads": 71229
     },
     {
-        "name": "Wow Discord Rich Presence",
-        "slug": "wow-drp",
-        "description": "Discord Rich Presence for World of Warcraft. The AddOn gathers data from the game and displays it to the python script, which updates the users Discord presence.",
-        "categories": [
-            "addon"
-        ],
-        "tech": [
-            "Python",
-            "Discord",
-            "Lua",
-            "WoW"
-        ],
-        "links": [
-            "github"
-        ]
-    },
-    {
         "name": "Arwic Alt Manager",
         "slug": "ArwicAltManager",
         "description": "Stores useful data about every character on a player's account and displays it in a table.",
-        "categories": [
-            "addon"
-        ],
+        "categories": [],
         "tech": [
             "Lua",
             "WoW"
@@ -389,9 +136,7 @@
         "name": "ElvUI Recount Inherit Global Fade",
         "slug": "ElvUI_RecountIGF",
         "description": "An extension of the popular AddOn ElvUI that causes Recount to respect the interface fading feature.",
-        "categories": [
-            "addon"
-        ],
+        "categories": [],
         "tech": [
             "Lua",
             "WoW"
@@ -407,9 +152,7 @@
         "name": "Simc Dungeon Journal",
         "slug": "simcdungeonjournal",
         "description": "Provides a function to generate SimulationCraft input based on boss loot tables found in the dungeon journal.",
-        "categories": [
-            "addon"
-        ],
+        "categories": [],
         "tech": [
             "Lua",
             "WoW"
@@ -420,5 +163,36 @@
         ],
         "curseUrl": "https://www.curseforge.com/wow/addons/simcdj",
         "downloads": 4721
+    },
+    {
+        "name": "Run",
+        "slug": "run",
+        "description": "Single button infinite runner game developed in Unity. Press any key to make the player jump off the ground or wall he is stuck to.",
+        "categories": [],
+        "tech": [
+            "Unity",
+            "CSharp"
+        ],
+        "links": [
+            "github",
+            "web"
+        ],
+        "demoUrl": "https://maxine4j.github.io/Run/"
+    },
+    {
+        "name": "Pong",
+        "slug": "pong",
+        "description": "Pong implemented with HTML5 canvas.",
+        "categories": [],
+        "tech": [
+            "HTML5",
+            "CSS",
+            "JavaScript"
+        ],
+        "links": [
+            "github",
+            "web"
+        ],
+        "demoUrl": "https://maxine4j.github.io/pong/"
     }
 ]

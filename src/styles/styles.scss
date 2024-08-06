@@ -64,14 +64,6 @@ body {
             font-size: inherit;
             font-family: inherit;
         }
-
-        #link-email::after {
-            content: "tim@tim-ings.com";
-        }
-
-        #link-email.masked::after {
-            content: "t**@t*******.com";
-        }
     }
 }
 

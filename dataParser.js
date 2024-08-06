@@ -1,7 +1,7 @@
 const fs = require('fs');
 
 const projectsFile = './src/data/projects.json';
-const githubUser = 'tim-ings';
+const githubUser = 'maxine4j';
 
 const headerImgFormatter = (slug) => `img/headers/${slug.toLowerCase()}.png`;
 
@@ -49,19 +49,14 @@ const processProjects = (projects) => {
             links,
             tech: proj.tech,
             downloads: proj.downloads,
-            iframe: proj.iframe,
         }
     });
 }
 
 const processCategories = (projects) => {
     return {
-        all: projects,
         featured: projects.filter(p => p.categories.includes('featured')),
-        websites: projects.filter(p => p.categories.includes('website')),
-        programs: projects.filter(p => p.categories.includes('program')),
-        games: projects.filter(p => p.categories.includes('game')),
-        addons: projects.filter(p => p.categories.includes('addon')),
+        remaining: projects.filter(p => !p.categories.includes('featured')),
     };
 }
 
